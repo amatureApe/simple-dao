@@ -20,7 +20,7 @@ const config: HardhatUserConfig = {
       allowUnlimitedContractSize: true
     }
   },
-  solidity: "0.8.7",
+  solidity: "0.8.9",
   namedAccounts: {
     deployer: {
       default: 0
