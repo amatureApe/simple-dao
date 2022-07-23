@@ -13,7 +13,7 @@ const deployTimelock: DeployFunction = async function (hre: HardhatRuntimeEnviro
     from: deployer,
     args: [MIN_DELAY, [], []],
     log: true
-  })
+  });
 }
 
 export default deployTimelock;

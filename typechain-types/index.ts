@@ -56,8 +56,8 @@ export type { DoubleEndedQueue } from "./@openzeppelin/contracts/utils/structs/D
 export { DoubleEndedQueue__factory } from "./factories/@openzeppelin/contracts/utils/structs/DoubleEndedQueue__factory";
 export type { Box } from "./contracts/Box";
 export { Box__factory } from "./factories/contracts/Box__factory";
-export type { MyGovernor } from "./contracts/governance_standard/GovernorContract.sol/MyGovernor";
-export { MyGovernor__factory } from "./factories/contracts/governance_standard/GovernorContract.sol/MyGovernor__factory";
+export type { GovernorContract } from "./contracts/governance_standard/GovernorContract";
+export { GovernorContract__factory } from "./factories/contracts/governance_standard/GovernorContract__factory";
 export type { Timelock } from "./contracts/governance_standard/TimeLock.sol/Timelock";
 export { Timelock__factory } from "./factories/contracts/governance_standard/TimeLock.sol/Timelock__factory";
 export type { GovernanceToken } from "./contracts/GovToken.sol/GovernanceToken";

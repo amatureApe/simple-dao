@@ -26,9 +26,9 @@ import type {
   TypedListener,
   OnEvent,
   PromiseOrValue,
-} from "../../../common";
+} from "../../common";
 
-export interface MyGovernorInterface extends utils.Interface {
+export interface GovernorContractInterface extends utils.Interface {
   functions: {
     "BALLOT_TYPEHASH()": FunctionFragment;
     "COUNTING_MODE()": FunctionFragment;
@@ -630,12 +630,12 @@ export type VotingPeriodSetEvent = TypedEvent<
 
 export type VotingPeriodSetEventFilter = TypedEventFilter<VotingPeriodSetEvent>;
 
-export interface MyGovernor extends BaseContract {
+export interface GovernorContract extends BaseContract {
   connect(signerOrProvider: Signer | Provider | string): this;
   attach(addressOrName: string): this;
   deployed(): Promise<this>;
 
-  interface: MyGovernorInterface;
+  interface: GovernorContractInterface;
 
   queryFilter<TEvent extends TypedEvent>(
     event: TypedEventFilter<TEvent>,
