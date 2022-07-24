@@ -6,7 +6,7 @@ const deployBox: DeployFunction = async function (
   hre: HardhatRuntimeEnvironment
 ) {
   const { getNamedAccounts, deployments } = hre;
-  const { deploy, log, get } = deployments;
+  const { deploy, log } = deployments;
   const { deployer } = await getNamedAccounts();
   log("Deploying Box...");
   const box = await deploy("Box", {
